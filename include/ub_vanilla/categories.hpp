@@ -11,10 +11,11 @@ class window : public esp::mod::category
 {
 public:
 	window(const std::string& mod_unlocalized_name, const std::string& mod_display_name)
-		:esp::mod::category(mod_unlocalized_name, mod_display_name) {}
+		: esp::mod::category(mod_unlocalized_name, mod_display_name)
+	{}
 
 	[[nodiscard]] cap::color get_color() const override;
 	[[nodiscard]] std::string get_unlocalized_name() const override;
 	[[nodiscard]] std::string get_display_name() const override;
 };
-}
+} // namespace ub_vanilla::category
